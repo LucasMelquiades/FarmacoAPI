@@ -51,7 +51,7 @@ Uma aplicação web foi desenvolvida para exemplificar o uso da API, permitindo:
 Você pode acessar o JSON diretamente via:
 
 ```code
-https://raw.githubusercontent.com/LucasMelquiades/Farmacoapi/refs/heads/main/js/farmacopeia.json
+https://raw.githubusercontent.com/LucasMelquiades/FarmacoAPI/refs/heads/main/js/farmacopeia.json
 ```
 
 ## ✨ Exemplos de Uso
@@ -59,7 +59,7 @@ https://raw.githubusercontent.com/LucasMelquiades/Farmacoapi/refs/heads/main/js/
 Você pode consumir os dados com JavaScript, Python, ou qualquer linguagem que suporte requisições HTTP. Exemplo com `fetch`:
 
 ```code
-fetch('https://raw.githubusercontent.com/LucasMelquiades/Farmacoapi/refs/heads/main/js/farmacopeia.json')
+fetch('https://raw.githubusercontent.com/LucasMelquiades/FarmacoAPI/refs/heads/main/js/farmacopeia.json')
   .then(res => res.json())
   .then(data => console.log(data.plantas));
 ```
