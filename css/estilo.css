@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #1C4102;
+    --secondary-color: #649642;
+    --thirdy-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+#header {
+    background: url(../img/background.png) no-repeat center;
+    background-size: cover;
+}
+
+#header nav {
+    padding-top: 2rem;
+}
+
+li.nav-item {
+    margin-left: 4rem;
+}
+
+a.nav-link {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+#header h3 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    padding-top: 10rem;
+    font-weight: bold;
+}
+
+#header h1 {
+    color: var(--primary-color);
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#header .col-md-6 img {
+    padding-bottom: 10rem;
+}
+
+main {
+    padding-top: 7rem;
+}
+
+.farmacopeia {
+    z-index: 12;
+    position: relative;
+}
+
+.col-md-12#sobre {
+    margin-top: -35rem !important;
+}
+
+.card-sobre {
+    background-color: var(--secondary-color) !important;
+    border-radius: 3.2rem !important;
+}
+
+.card-sobre .col-md-6, .card-sobre .col-md-12 {
+    padding-left: 3rem;
+}
+
+.card-sobre .col-md-12 p {
+    padding-right: 2rem;
+}
+
+.card-sobre h2 {
+    font-size: 4.6rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.card-sobre p, #descricao p {
+    font-size: 1.25rem;
+}
+
+.margem {
+    border-left: 4px solid var(--thirdy-color) !important;
+    padding-left: 3rem;
+}
+
+.descricao {
+    background-color: var(--primary-color);
+    color: var(--thirdy-color);
+    margin-top: -11rem;
+    padding-bottom: 3rem;
+    padding-top: 18rem;
+}
+
+#descricao h3 {
+    font-size: 2.6rem;
+    color: var(--thirdy-color);
+    font-weight: bold;
+}
+
+#descricao h4 {
+    font-size: 1.875rem;
+    color: var(--thirdy-color);
+    font-weight: bold;
+}
+
+#descricao hr {
+    margin: 1rem 0;
+    color: var(--thirdy-color);
+    border: 2px var(--thirdy-color) solid;
+    opacity: 5;
+}
+
+.consulta {
+    background-color: var(--primary-color);
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+}
+
+.card-consulta {
+    background-color: var(--thirdy-color) !important;
+    border-radius: 3.2rem !important;
+}
+
+#consulta h4 {
+    color: var(--primary-color);
+    font-size: 1.875rem;
+    padding-top: 1.8rem;
+}
+
+#consulta p {
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+#list-tab, #generalidades, .tab-content {
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: var(--thirdy-color) !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+button.swal2-confirm {
+  background-color: var(--primary-color);
+  color: var(--thirdy-color);
+}
+
+
+button.swal2-confirm:hover {
+  background-color: var(--secondary-color);
+  color: var(--thirdy-color);
+}
+
+.consulta h5 {
+    font-size: 1.3rem;
+}
+
+.tab-content img {
+    border-radius: 3.2rem;
+}
+
+#generalidades h5 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+#generalidades p {
+    font-size: 1rem;
+}
+
+section#frase h1 {
+    padding-top: 14rem;
+    font-size: 3.25rem;
+    color: var(--primary-color);
+}
+
+img.girarEBater.img-fluid {
+    width: 630px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    text-align: justify;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--thirdy-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+     color: var(--thirdy-color);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@keyframes girarEBater {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.girarEBater {
+  transition: transform 0.5s ease-in-out;
+  animation: girarEBater 8s ease-in-out infinite;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--thirdy-color);
+    padding-bottom: 0.1rem;
+    padding-top: 1rem;
+}
+
+.mobile, .navbar-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.logo {
+    width: 3.5rem;
+}
+
+@media screen and (max-width: 630px) {
+    #header h3 {
+        font-size: 1.7rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    #header h1 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    img.pt-2.img-fluid {
+        width: 230px;
+    }
+
+    #header .col-md-6 img {
+        padding-bottom: 0rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .col-md-12#sobre {
+        margin-top: 0rem !important;
+    }
+
+    .card-sobre h2 {
+        font-size: 2.5rem;
+    }
+
+    .card-sobre .col-md-6, .card-sobre .col-md-12 {
+        padding-left: 1.2rem;
+    }
+
+    .card-sobre p, #descricao p {
+        font-size: 1rem;
+    }
+
+    .margem {
+        padding-left: 2rem;
+    }
+
+    #descricao h3 {
+        font-size: 2.1rem;
+    }
+
+    span.text-white {
+        font-size: 0.7rem;
+    }
+
+    #descricao h4 {
+        font-size: 1.7rem;
+    }
+
+    .mobile, .navbar-mobile {
+        display: contents;
+    }
+
+    #list-tab {
+        max-height: 250px!important;
+    }
+
+    .col-md-3#generalidades {
+        max-height: 100%!important;
+    }
+
+    section#frase h1 {
+        padding-top: 7rem;
+        font-size: 1.9rem;
+    }
+
+    img.girarEBater.img-fluid {
+        width: 250px;
+    }
+}
