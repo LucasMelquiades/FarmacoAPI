@@ -140,13 +140,13 @@ main {
     border-radius: 3.2rem !important;
 }
 
-#consulta h4 {
+#consulta h4, #API h4 {
     color: var(--primary-color);
     font-size: 1.875rem;
     padding-top: 1.8rem;
 }
 
-#consulta p {
+#consulta p, #API p {
     padding-top: 1rem;
     color: var(--primary-color);
     font-size: 1.25rem;
@@ -164,15 +164,15 @@ main {
     border-color: var(--primary-color) !important;
 }
 
-button.swal2-confirm {
-  background-color: var(--primary-color);
-  color: var(--thirdy-color);
+button.swal2-confirm, .botao-api {
+  background-color: var(--primary-color) !important;
+  color: var(--thirdy-color) !important;
 }
 
 
-button.swal2-confirm:hover {
-  background-color: var(--secondary-color);
-  color: var(--thirdy-color);
+button.swal2-confirm:hover, .botao-api:hover {
+  background-color: var(--secondary-color)!important;
+  color: var(--thirdy-color)!important;
 }
 
 .consulta h5 {
@@ -268,6 +268,19 @@ footer {
     width: 3.5rem;
 }
 
+.card-api {
+    border-radius: 3rem !important;
+    padding: 2rem;
+}
+
+section#API {
+    margin-top: 14rem;
+}
+
+.bg-api {
+    background-color: var(--primary-color) !important;
+}
+
 @media screen and (max-width: 630px) {
     #header h3 {
         font-size: 1.7rem;
@@ -343,5 +356,9 @@ footer {
 
     img.girarEBater.img-fluid {
         width: 250px;
+    }
+
+    section#API {
+        margin-top: 8rem;
     }
 }
