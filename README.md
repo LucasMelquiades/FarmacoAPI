@@ -2,19 +2,19 @@
 
 Uma API estática em JSON com dados de plantas medicinais e termos técnicos, baseada no [Formulário de Fitoterápicos da Farmacopeia Brasileira (2ª edição)](https://www.gov.br/anvisa/pt-br/assuntos/farmacopeia/formulario-fitoterapico).
 
+## 📦 Sobre o Projeto
+
 O FFFB  foi criado com base em:
 
 - Estudos científicos e validação técnica das propriedades medicinais das plantas.
 - Consulta a práticas tradicionais já utilizadas por comunidades locais, especialmente aquelas com histórico de uso seguro.
 - Colaboração com especialistas em fitoterapia, farmacognosia e saúde pública, além de instituições como universidades e centros de pesquisa.
 
-## 🏥 Relação com o SUS
+🏥 Relação com o SUS
 
 - O FFFB serve como referência para as Farmácias Vivas, que são unidades do SUS que produzem medicamentos fitoterápicos com base em plantas medicinais cultivadas localmente.
 - Ele valoriza o conhecimento tradicional de comunidades indígenas, quilombolas e rurais, ao oficializar práticas que já eram utilizadas há gerações.
 - O formulário também facilita a notificação de Produtos Tradicionais Fitoterápicos, permitindo que esses medicamentos sejam oferecidos com segurança e respaldo legal
-
-## 📦 Sobre o Projeto
 
 Este repositório contém:
 
@@ -45,10 +45,6 @@ Um glossário com termos técnicos relevantes:
 - `nome`
 - `descricao`
 
-## 🖼️ Imagens via Wikimedia Commons
-
-A interface web utiliza a API da Wikimedia Commons para buscar imagens relacionadas aos nomes científicos e populares das plantas.
-
 ## 🌐 Interface Web
 
 Uma aplicação web foi desenvolvida para exemplificar o uso da API, permitindo:
@@ -57,6 +53,10 @@ Uma aplicação web foi desenvolvida para exemplificar o uso da API, permitindo:
 - Visualização das fórmulas e indicações
 - Consulta ao glossário de generalidades
 - Exibição de imagens relacionadas
+
+## 🖼️ Imagens via Wikimedia Commons
+
+A interface web utiliza a API da Wikimedia Commons para buscar imagens relacionadas aos nomes científicos e populares das plantas.
 
 ## 🔗 Acesso à API
 
@@ -75,10 +75,6 @@ fetch('https://raw.githubusercontent.com/LucasMelquiades/FarmacoAPI/refs/heads/m
   .then(res => res.json())
   .then(data => console.log(data.plantas));
 ```
-
-## 📚 Fonte dos dados
-
-Baseado no Formulário de Fitoterápicos da Farmacopeia Brasileira – 2ª edição.
 
 ## ⚠️ Aviso Legal
 
@@ -99,14 +95,6 @@ Este projeto tem fins educacionais e informativos. Consulte sempre um profission
 - Tradução para outros idiomas
 - Validação dos dados com JSON Schema
 - Expansão da interface web
-
-## 🤝 Contribuições
-
-Este projeto é open source e está aberto a contribuições da comunidade!
-
-- Faça um fork
-- Crie uma branch
-- Envie um pull request
 
 ## ✉️ Contato
 
