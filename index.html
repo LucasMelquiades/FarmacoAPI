@@ -22,6 +22,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#consulta"><strong>Consulta</strong></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#API"><strong>API</strong></a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -36,6 +39,7 @@
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                             <a href="#sobre" onclick="closeNav()">Sobre</a>
                             <a href="#consulta" onclick="closeNav()">Consulta</a>
+                            <a href="#API" onclick="closeNav()">API</a>
                         </div>
                         <span class="menu-mobile" onclick="openNav()">&#9776;</span>
                     </div>
@@ -171,6 +175,75 @@
                         </div>
                     </div>
                 </div>
+        </section>
+        <section id="API">
+            <div class="container card card-api">
+                <h4 class="text-center">FarmacoAPI – Farmacopeia Brasileira</h4>
+                <p class="text-center">Aqui você encontra dados organizados em JSON sobre plantas medicinais, fórmulas, <br>modos de uso e até um glossário com os termos técnicos mais usados.</p>
+                <div class="row pt-3 card-body">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="accordion mb-4" id="accordionDocumentacao">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingConteudo">
+                                <button class="accordion-button bg-api text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConteudo" aria-expanded="false" aria-controls="collapseConteudo">
+                                    📦 O que tem aqui?
+                                </button>
+                                </h2>
+                                <div id="collapseConteudo" class="accordion-collapse collapse" aria-labelledby="headingConteudo" data-bs-parent="#accordionDocumentacao">
+                                <div class="accordion-body">
+                                    <p>Essa API traz os dados da <strong>Farmacopeia Brasileira 2ª edição</strong> publicados pela ANVISA, organizados em JSON. Você vai encontrar:</p>
+                                    <ul>
+                                    <li>🌱 <strong>Plantas medicinais</strong> com nome científico, nomes populares, fórmulas e orientações de uso</li>
+                                    <li>📘 <strong>Generalidades</strong>: um glossário técnico pra entender os termos farmacêuticos</li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingAcesso">
+                                <button class="accordion-button bg-api text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcesso" aria-expanded="false" aria-controls="collapseAcesso">
+                                    🔗 Como acessar
+                                </button>
+                                </h2>
+                                <div id="collapseAcesso" class="accordion-collapse collapse" aria-labelledby="headingAcesso" data-bs-parent="#accordionDocumentacao">
+                                <div class="accordion-body">
+                                    <p>A API é estática e super fácil de usar. Basta fazer uma requisição para:</p>
+                                    <code>https://raw.githubusercontent.com/LucasMelquiades/FarmacoAPI/refs/heads/main/js/farmacopeia.json</code>
+                                    <p class="mt-2">Pode usar <code>fetch</code>, <code>axios</code> ou qualquer cliente HTTP.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingExemplo">
+                                <button class="accordion-button bg-api text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExemplo" aria-expanded="false" aria-controls="collapseExemplo">
+                                    💡 Exemplo de uso
+                                </button>
+                                </h2>
+                                <div id="collapseExemplo" class="accordion-collapse collapse" aria-labelledby="headingExemplo" data-bs-parent="#accordionDocumentacao">
+                                <div class="accordion-body">
+                                    <pre><code>fetch('https://raw.githubusercontent.com/LucasMelquiades/FarmacoAPI/refs/heads/main/js/farmacopeia.json')
+.then(res => res.json())
+.then(data => {
+    console.log(data.plantas);
+    console.log(data.generalidades);
+});
+                                    </code></pre>
+                                </div>
+                                </div>
+                            </div>
+
+                            </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <p class="mt-2 text-center"><b>Pronto!</b> Agora é só organizar os dados e criar algo incrível.<br><br>
+                O projeto esta no GitHub com licença MIT.<br><br>
+                <a href="https://github.com/LucasMelquiades/FarmacoAPI" target="_blank" class="btn botao-api">
+                Ver no GitHub
+                </a></p>
+                
+            </div>
         </section>
         <section id="frase" class="text-center">
             <h1>Cada planta é um elo entre o saber<br>ancestral e a ciência moderna.<br>Que este espaço seja ponte entre os dois.</h1>
